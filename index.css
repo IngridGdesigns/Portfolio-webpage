@@ -1,0 +1,16 @@
+/*********** CSS file for index.html - Portfolio Page **********/
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+blockquote {
+    color:turquoise;
+}
