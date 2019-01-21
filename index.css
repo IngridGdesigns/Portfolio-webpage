@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #EFEFEF;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 h1 {
@@ -34,7 +35,7 @@ footer {
 
 /* space between header and content*/
 .content {
-    padding: 80px; 
+    padding: 85px; 
 }
 
 /*colored border box of paragraph in the header */
@@ -42,7 +43,7 @@ footer {
     box-sizing: border-box;
     border-style: none;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color:  purple;
     /*opacity:0.4*/
 }
@@ -80,9 +81,18 @@ footer {
 .navbar {
     margin-bottom: 0;
 }
-
+/*eliminate rounded corners in navbar*/
 .navbar-inverse {
     border-radius: 0;
+}
+/*hamburger has a border*/
+.navbar-toggle {
+    border: solid purple;
+    
+}
+/*hamburger stack has color*/
+.icon-bar {
+    border: solid purple;
 }
 
 
@@ -92,10 +102,6 @@ footer {
     height: 200px;
     background-color:#008F95; /* Aqua - For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #008F95,/*aqua*/ rgb(162, 201, 247)); /* Standard syntax (must be last) */
-}
-
-#center {
-    text-align:center;
 }
 
 /*for h1 tag - changes color of text */
@@ -111,7 +117,6 @@ footer {
   }
 */
 
-
 /*Clear floats after the columns */
 .row:after {
     content: "";
@@ -119,3 +124,30 @@ footer {
     clear: both;
 }
 
+/* media query's */
+@media screen and (min-width: 600px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 35px;
+    }
+    #small{
+        font-size:20px;
+    }
+    .border {
+        border-style: solid;
+        border-color: purple;
+        width: 100%;
+        padding: 10px;
+        background-color: purple;
+        opacity:0.4 
+    }
+    p {
+        font-size:13px;
+    }
+  }
