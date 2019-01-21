@@ -14,10 +14,6 @@ h3 {
     font-size: 30px;
 }
 
-blockquote {
-    color:turquoise;
-}
-
 header {
     padding: 78px;
 }
@@ -33,7 +29,7 @@ footer {
     font-family: 'Quicksand', bold, sans-serif;
     color: rgb(188, 243, 237);
     /*background-color: #008F95; /*aqua*/
-    text-align:center;
+    text-align: center;
 }
 
 
@@ -76,12 +72,12 @@ footer {
 .right {
     float: right;
 }
-
-
+ 
 /* Overrides header class with font-family and color */
 .override {
     font-family: 'Montserrat', sans-serif;
     color: azure;
+    font-size: 12px;
 }
 
 /* ID's*/
@@ -91,3 +87,22 @@ footer {
     background-color:#008F95; /* Aqua - For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #008F95,/*aqua*/ rgb(162, 201, 247)); /* Standard syntax (must be last) */
 }
+
+#center {
+    text-align:center;
+}
+
+
+/*
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+*/

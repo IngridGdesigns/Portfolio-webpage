@@ -14,17 +14,14 @@
         <meta name="description" content="Portfolio Website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap links go here -->
-            <!-- Latest compiled and minified CSS -->
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-            <!-- Optional Bootstrap theme -->
+        
+        <!-- Optional Bootstrap theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+        
         <!-- Google fonts Display type Quicksand and Body type Montserrat-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand:300,500" rel="stylesheet">
-        <style>
-                @import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand:300,500');
-        </style>
 
         <!-- My CSS for index.html-->
         <link rel="stylesheet" href="index.css">
@@ -34,36 +31,20 @@
     <body>
     <!--start of bootstrap container-->
     
-           <!--bootstrap 
-        <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <img alt="Logo cat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9WJ8w07SAcAQj8J3cxe_c0Z42pcTAYiWFYtZGqlA0E02tSlB" width="30px">
-            </a>
-
-            </div>
-        </div>
-        </nav>
-        
-    </header> nav--> 
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> 
-                to improve your experience.</p>
-        <![endif]-->
 
     <!-- Here is header for website -->
     <div class="header">
     <!--header starts-->
     <header id="gradient">
     <!--header row starts-->
-        <div class="row">
+        <div class="row col-xs-12">
             <h1>¡Hola! I'm Ingrid García</h1>
             <p class="border override">I'm passionate and curious about learning UX/UI and web design.</p>
         </div>
-    </div>
     </header>
     <!--header ends-->
+    </div>
+    
     <!-- Bootstrap container of main content and footer -->
     <div class="content">
 
@@ -72,16 +53,19 @@
 
     <!--section row1 starts-->
     <section class="row">
-        <div class="left column">
+        <div class="left col-md-4"">
+            <h4>Designer</h4>
             <p>some text stuff that's just filler text</p>
         </div>
-        <div class="left column">
+        <div class="left col-md-4">
             <h4> I'm in the process of becoming<br> a Software Engineer</h4>
             <p>
-                My journey started when I became eager to know how <br> HTML, CSS and JavaScript worked.
+                My journey started when I became eager to know how HTML, CSS and JavaScript worked.
             </p>
         </div>
-        <div class="right column">
+        <div class="right col-md-4">
+            <h4>It's me!</h4>
+            <!-- Image  -->
             <img class="photo .img-thumbnail" src="https://fillmurray.com/250/150"alt="Placeholder image">
         </div>
     </section>
@@ -89,14 +73,14 @@
 
     <!--section row2 starts-->
     <section class="row">
-        <div class="left column">
+        <div class="left col-md-6">
             <h3>Code Experience</h3>
             <p>
                 I'm passionate and curious about learning UX/UI and web design. <br>
                 My past job experiences have taught me many lessons, which can be applied anywhere: 
             </p>
         </div>
-        <div class="right column">
+        <div class="right col-md-6">
             <ul>
                 <li>The process of creating and iteration to improve a design, a report or a block of code.</li>
                 <li>Collaborating with a team to get things done efficiently.</li>
@@ -126,6 +110,10 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+-->
     </body>
 </html>
