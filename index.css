@@ -1,6 +1,14 @@
 /*********** CSS file for index.html - Portfolio Page **********/
+
+
 body {
     margin: 0;
+    background-color: #EFEFEF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sidebar {
+    font-size: 12px;
 }
 
 h1 {
@@ -14,3 +22,77 @@ h3 {
 blockquote {
     color:turquoise;
 }
+
+.wrapper {
+    color: darkolivegreen;
+}
+
+
+/* Header class */
+
+.header {
+    font-family: 'Quicksand', bold, sans-serif;
+    padding:50px;
+    color: rgb(188, 243, 237);
+    /*background-color: #008F95; /*aqua*/
+    text-align:right;
+}
+
+.row {
+    color: red;
+}
+
+.content {
+    padding: 80px;
+}
+
+.border {
+    box-sizing: border-box;
+    border-style: none;
+    width: 100%;
+    padding: 10px;
+    background-color: azure;
+}
+
+.photo {
+    background:none;
+    filter: grayscale(70%);
+    border:5px solid grey;
+}
+
+.photo:hover {
+    background-color: rgb(128, 16, 40);
+    opacity:0.7 !important;
+    filter:none; /*alpha(opacity=70) !important;  For IE8 and earlier - main code from:  https://css-tricks.com/apply-a-filter-to-a-background-image/*/
+    box-shadow: 0 0 0px #000000 !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+/* Overrides header class with font-family and color */
+.override {
+    font-family: 'Montserrat', sans-serif;
+    color: purple;
+}
+
+
+
+
+
+
+/* ID's*/
+
+/* gradient for header box */
+#gradient {
+    height: 200px;
+    background-color:#008F95; /* Aqua - For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #008F95,/*aqua*/ rgb(162, 201, 247)); /* Standard syntax (must be last) */
+  }

@@ -1,16 +1,24 @@
 <!DOCTYPE html>
+<!-- Html boilerplate -->
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-<html class="no-js"> <!-<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>My Portfolio Webpage</title>
+        <title>Ingrid Garcia | Software Engineer and future UX/UI designer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap links go here -->
+
+        <!-- Google fonts Display type Quicksand and Body type Montserrat-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand:300,500" rel="stylesheet">
+        <style>
+                @import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand:300,500');
+        </style>
+
         <!-- My CSS for index.html-->
         <link rel="stylesheet" href="index.css">
     </head>
@@ -18,45 +26,73 @@
     <!-- header stuff goes here, like nav for example...-->
     <body>
     <!--start of bootstrap container-->
+    
+           <!--bootstrap 
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo cat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9WJ8w07SAcAQj8J3cxe_c0Z42pcTAYiWFYtZGqlA0E02tSlB" width="30px">
+            </a>
+
+            </div>
+        </div>
+        </nav>
+        
+    </header> nav--> 
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> 
                 to improve your experience.</p>
         <![endif]-->
-    <div>
-        <h1>Hello! I'm Ingrid</h1>
-        <p>
-            Thanks to Techtonica, I'm in the process of becoming a Software Engineer, <br>
-            My journey to coding started when I became eager to know how HTML, CSS and JavaScript worked together.
-        </p>
-    </div>
-    <div>
-        <img src="https://via.placeholder.com/200" alt="Placeholder image">
-        <h3>Code Experience</h3>
-        <p>
-            I'm passionate and curious about learning UX/UI and web design. <br>
-            My past job experiences have taught me many lessons, which can be applied anywhere: 
-            <!--
-            Events Supervisor at the Yerba Buena Gardens Festival enjoying the park. Before that I was in the non-profit world teaching
-            kids how to make impactful art. 
-             I use color, graphics and animation to enhance the world one pixel at a time. 
-             I strive to engage the audience in wanting to know more by telling them a story where they can also participate. 
-            I love to collaborate with teams or work alone and know how to get things moving!-->
-        </p>
 
-        <ul>
-            <li>The process of creating and iteration to improve a design, a report or a block of code.</li>
-            <li>Collaborating with a team to get things done efficiently.</li>
-            <li>Taking initiative and leading workshops.</li>
-            <li>placeholder, placeholder. Placing a space.</li>
-        </ul>
+    <!-- Here is header for website -->
+    <header id="gradient" class="header">
+        <h1>¡Hola! I'm Ingrid García</h1>
+        <p class="border override">I'm passionate and curious about learning UX/UI and web design.</p>
+    </header>
+    <!-- Here is our page's main content -->
+    <main class="content">
 
-    </div>
-        
+    <!--section row1 starts-->
+    <section class="row"> 
+        <div class="left">
+            <img class="photo" src="images/eu.png" alt="Placeholder image" width="250px">
+        </div>
+        <div class="right">
+            <h2>Thanks to Techtonica <br> I'm in the process of becoming a Software Engineer</h2>
+            <p>
+                My journey to coding started when I became eager to know how HTML, CSS and JavaScript worked.
+            </p>
+        </div>
+    </section>
+    <!--section row1 ends-->
+
+    <!--section row2 starts-->
+    <section class="row">
+        <div class="left">
+            <h3>Code Experience</h3>
+            <p>
+                I'm passionate and curious about learning UX/UI and web design. <br>
+                My past job experiences have taught me many lessons, which can be applied anywhere: 
+            </p>
+        </div>
+        <div class="right">
+            <ul>
+                <li>The process of creating and iteration to improve a design, a report or a block of code.</li>
+                <li>Collaborating with a team to get things done efficiently.</li>
+                <li>Taking initiative and leading workshops.</li>
+                <li>placeholder, placeholder. Placing a space.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- section row2 ends-->
+</main>
+<!-- End of main content -->      
       <!-- <script src="" async defer></script> 
         --> 
-    
-        <footer>
+        <footer class="row">
             <!---footer stuff goes here-->
+            <p>2019 Techtonica | Ingrid García</p>
         </footer>
     </body>
 </html>
