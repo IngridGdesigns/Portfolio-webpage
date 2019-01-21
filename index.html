@@ -3,7 +3,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!- <html class="no-js"> --<![endif]-->
 <html lang="en">
 
     <head>
@@ -23,59 +23,59 @@
         <!-- Google fonts Display type Quicksand and Body type Montserrat-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand:300,500" rel="stylesheet">
 
-        <!-- Setup of font awesome -->
+        <!-- Setup for font awesome, use of Github & Linkedin icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
         <!-- My CSS for index.html-->
         <link rel="stylesheet" href="index.css">
     </head>
-   
-    <!-- header stuff goes here, like nav for example...-->
     <body>
-
     <!--start of bootstrap navigation-->
-    <!-- bootstrap dark nav bar-->
+        <!-- bootstrap dark nav bar-->
     <nav class="navbar navbar p-3 mb-2 bg-success text-white">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                  <!--bootstrap hamburger toggle navigation 1st pattern -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span> 
-                </button>
-                <a class="navbar-brand" href="#" style="font-family: 'Montserrat', sans-serif; color:purple;">hi, i'm ingrid!</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-center">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Portfolio</a></li> 
-                  <li><a href="#">Contact Me</a></li> 
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- github icon-->
-                    <li><a href="https://github.com/IngridGdesigns"><span style="font-size: 15px; color: rgb(17, 74, 131);">
-                            <i class="fab fa-github-alt"></i></span></a>
-                    </li>
-                    <!-- linkedin icon-->
-                    <li>
-                      <a href="https://www.linkedin.com/in/ingridgarc%C3%ADa"><span style="font-size: 15px; color: rgb(17, 74, 131);">
-                        <i class="fab fa-linkedin"></i></span></a>
-                    </li>
-                </ul>
-              </div>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--bootstrap hamburger toggle navigation 1st pattern -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#" style="font-family: 'Montserrat', sans-serif; color:purple;">hi, i'm ingrid!</a>
             </div>
-          </nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li> 
+                <li><a href="#">Contact Me</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- github icon-->
+                <li><a href="https://github.com/IngridGdesigns"><span style="font-size: 15px; color: rgb(17, 74, 131);">
+                        <i class="fab fa-github-alt"></i></span></a>
+                </li>
+                <!-- linkedin icon-->
+                <li>
+                    <a href="https://www.linkedin.com/in/ingridgarc%C3%ADa"><span style="font-size: 15px; color: rgb(17, 74, 131);">
+                    <i class="fab fa-linkedin"></i></span></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of bootstrap navbar-->
 
     <!-- Here is header for website -->
     <div class="header">
     <!--header starts-->
     <header id="gradient">
     <!--header row starts-->
+    <!-- row div-->
         <div class="row col-xs-12">
             <div>
             <h1>¡Hola! <small id="small">I'm Ingrid García</small></h1>
+             <!--Override class in p-->
             <p class="border override">I'm passionate and curious about learning UX/UI and web design.</p>
             </div>
         </div>
@@ -98,8 +98,8 @@
             </p>
         </div>
         <div class="col-sm-6 col-md-4">
-            <!-- Image  -->
-            <img class="photo img-fluid" src="https://fillmurray.com/250/250" alt="Placeholder image">
+            <!-- Place holder Image, I will get a pic of me soon  -->
+            <img class="photo img-fluid" src="https://fillmurray.com/250/250" alt="Placeholder image of Bill Murray">
         </div>
         <div class="col-sm-12 col-md-4">
             <h3>I'm also a Graphic Designer and Illustrator </h3>
@@ -133,27 +133,23 @@
     
     </div>
 <!-- end of main content container-->  
-<footer>
+<!-- footer starts here-->
+    <footer>
         <div class="row">
             <div class="col-xs-12">
                 <!---footer stuff goes here-->
+                 <!--Override class in h3-->
                 <p class="override">by Ingrid García | Techtonica 2019</p>
             </div>
         </div>
     </footer> 
-
-
-
-
+<!-- The end of footer-->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
--->
-</html>
+
     </body>
+</html>
+    

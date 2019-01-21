@@ -81,21 +81,24 @@ footer {
 /* Overrides header class with font-family and color */
 .override {
     font-family: 'Montserrat', sans-serif;
-    color: azure;
+    color: rgb(214, 250, 156);
     font-size: 12px;
 }
+
+
 /* formatting Bootstraps navbar to not have space between header and navbar*/
 .navbar {
     margin-bottom: 0;
 }
+
 /*eliminate rounded corners in navbar*/
 .navbar-inverse {
     border-radius: 0;
 }
+
 /*hamburger has a border*/
 .navbar-toggle {
     border: solid purple;
-    
 }
 /*hamburger stack has color*/
 .icon-bar {
@@ -118,21 +121,6 @@ a.active {
 #small {
     color: rgb(201, 253, 204);
 }
-
-
-/*
-.column {
-    float: left;
-    width: 33.33%;
-  }
-*/
-
-/*Clear floats after the columns 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
 
 /* media query's */
   /*  https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
@@ -262,3 +250,16 @@ a.active {
 screen.width;
 1440
 */
+/* old CSS rules
+.column {
+    float: left;
+    width: 33.33%;
+  }
+*/
+
+/*Clear floats after the columns 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
