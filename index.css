@@ -1,10 +1,11 @@
 /*********** CSS file for index.html - Portfolio Page **********/
 
 body {
-    margin: 0;
-    background-color: #EFEFEF;
+    
+    background-color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+
 }
 
 h1 {
@@ -13,6 +14,11 @@ h1 {
 
 h3 {
     font-size: 30px;
+    color: rgb(66, 195, 255); /* Change the color */
+}
+
+h4 {
+    font-size: 28px;
 }
 
 header {
@@ -20,8 +26,10 @@ header {
 }
 
 footer {
-    clear: both;
+    
     text-align: center;
+    background-color: rgb(52, 4, 92);
+    color: rgb(208, 246, 255);
 }
 
 
@@ -35,14 +43,13 @@ footer {
 
 /* space between header and content*/
 .content {
-    padding: 85px; 
+    padding: 80px; 
 }
 
 /*colored border box of paragraph in the header */
 .border {
     box-sizing: border-box;
     border-style: none;
-    width: 100%;
     padding: 12px;
     background-color:  purple;
     /*opacity:0.4*/
@@ -95,6 +102,9 @@ footer {
     border: solid purple;
 }
 
+a.active {
+    color:purple;
+}
 
 /* ID's*/
 /* gradient for header box */
@@ -117,37 +127,138 @@ footer {
   }
 */
 
-/*Clear floats after the columns */
+/*Clear floats after the columns 
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
+}*/
 
 /* media query's */
-@media screen and (min-width: 600px) {
-    h1 {
-      font-size: 50px;
-    }
+  /*  https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px)  {
+    ul {
+        list-style: none; /* Remove default bullets */
+      }
+    
   }
   
-
-@media screen and (max-width: 600px) {
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
     h1 {
-      font-size: 35px;
+        font-size: 50px;
+      }
+     
+  
+}
+    /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .photo {
+        background-color: rgb(128, 16, 40);
+        opacity:0.7 !important;
+        filter: none; /*alpha(opacity=70) !important;  For IE8 and earlier - main code from:  https://css-tricks.com/apply-a-filter-to-a-background-image/*/
+        box-shadow: 0 0 0px #000000 !important;
     }
-    #small{
-        font-size:20px;
+
+    h3 {
+        color: rgb(66, 195, 255); /* Change the color */
     }
-    .border {
-        border-style: solid;
-        border-color: purple;
-        width: 100%;
-        padding: 10px;
-        background-color: purple;
-        opacity:0.4 
-    }
-    p {
-        font-size:13px;
-    }
+    br {
+        display: none;
+        }
+        .photo {
+            background-color: rgb(128, 16, 40);
+            opacity:0.7 !important;
+            filter: none; /*alpha(opacity=70) !important;  For IE8 and earlier - main code from:  https://css-tricks.com/apply-a-filter-to-a-background-image/*/
+            box-shadow: 0 0 0px #000000 !important;
+        }
   }
+
+/* 
+    ##Device = Some Smartphones Mobiles/tablets (Portrait)
+    ##Screen = B/w 4810px to 690px
+  */
+  @media (min-width: 480px) and (max-width: 700px) {
+    h1 {
+        font-size: 38px;
+        color: darkslategray;
+      }
+      #small{
+          font-size:22px;
+      }
+      .photo {
+        background-color: rgb(128, 16, 40);
+        opacity:0.7 !important;
+        filter: none; /*alpha(opacity=70) !important;  For IE8 and earlier - main code from:  https://css-tricks.com/apply-a-filter-to-a-background-image/*/
+        box-shadow: 0 0 0px #000000 !important;
+    }
+
+  }
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  @media (min-width: 320px) and (max-width: 480px) {
+    h1 {
+        font-size: 35px;
+        color: darkslategray;
+      }
+      #small{
+          font-size:20px;
+      }
+      .border {
+          border-style: solid;
+          border-color: skyblue;
+          width: 100%;
+          padding: 7px;
+          background-color: white;
+          opacity:0.9;
+      }
+      .override {
+        font-family: 'Montserrat', sans-serif;
+        color: purple;
+        font-size: 12px;
+    }
+
+      p {
+          font-size: 18px;
+      }
+      h3 {
+         color:purple;
+          text-align:center;
+          font-size: 22px;
+      }
+      h4 {
+         color:purple;
+          font-size: 22px;
+      }
+      br {
+        display: none;
+        }
+        .photo {
+            background-color: rgb(128, 16, 40);
+            opacity:0.7 !important;
+            filter: none; /*alpha(opacity=70) !important;  For IE8 and earlier - main code from:  https://css-tricks.com/apply-a-filter-to-a-background-image/*/
+            box-shadow: 0 0 0px #000000 !important;
+        }
+    }
+/*screen.height;
+900
+screen.width;
+1440
+*/
