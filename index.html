@@ -4,14 +4,21 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>Ingrid Garcia | Software Engineer and future UX/UI designer</title>
-        <meta name="description" content="">
+        <meta name="description" content="Portfolio Website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap links go here -->
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+            <!-- Optional Bootstrap theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
         <!-- Google fonts Display type Quicksand and Body type Montserrat-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand:300,500" rel="stylesheet">
@@ -46,37 +53,50 @@
         <![endif]-->
 
     <!-- Here is header for website -->
-    <header id="gradient" class="header">
-        <h1>¡Hola! I'm Ingrid García</h1>
-        <p class="border override">I'm passionate and curious about learning UX/UI and web design.</p>
+    <div class="header">
+    <!--header starts-->
+    <header id="gradient">
+    <!--header row starts-->
+        <div class="row">
+            <h1>¡Hola! I'm Ingrid García</h1>
+            <p class="border override">I'm passionate and curious about learning UX/UI and web design.</p>
+        </div>
+    </div>
     </header>
+    <!--header ends-->
+    <!-- Bootstrap container of main content and footer -->
+    <div class="content">
+
     <!-- Here is our page's main content -->
-    <main class="content">
+    <main class="container">
 
     <!--section row1 starts-->
-    <section class="row"> 
-        <div class="left">
-            <img class="photo" src="images/eu.png" alt="Placeholder image" width="250px">
+    <section class="row">
+        <div class="left column">
+            <p>some text stuff that's just filler text</p>
         </div>
-        <div class="right">
-            <h2>Thanks to Techtonica <br> I'm in the process of becoming a Software Engineer</h2>
+        <div class="left column">
+            <h4> I'm in the process of becoming<br> a Software Engineer</h4>
             <p>
-                My journey to coding started when I became eager to know how HTML, CSS and JavaScript worked.
+                My journey started when I became eager to know how <br> HTML, CSS and JavaScript worked.
             </p>
+        </div>
+        <div class="right column">
+            <img class="photo .img-thumbnail" src="https://fillmurray.com/250/150"alt="Placeholder image">
         </div>
     </section>
     <!--section row1 ends-->
 
     <!--section row2 starts-->
     <section class="row">
-        <div class="left">
+        <div class="left column">
             <h3>Code Experience</h3>
             <p>
                 I'm passionate and curious about learning UX/UI and web design. <br>
                 My past job experiences have taught me many lessons, which can be applied anywhere: 
             </p>
         </div>
-        <div class="right">
+        <div class="right column">
             <ul>
                 <li>The process of creating and iteration to improve a design, a report or a block of code.</li>
                 <li>Collaborating with a team to get things done efficiently.</li>
@@ -86,13 +106,26 @@
         </div>
     </section>
     <!-- section row2 ends-->
-</main>
-<!-- End of main content -->      
-      <!-- <script src="" async defer></script> 
-        --> 
-        <footer class="row">
-            <!---footer stuff goes here-->
-            <p>2019 Techtonica | Ingrid García</p>
-        </footer>
+    </main>
+<!-- End of main content -->
+    <footer>
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="column">
+                <!---footer stuff goes here-->
+                <p>by Ingrid García | Techtonica 2019</p>
+            </div>
+        </div>
+    </footer> 
+    </div>
+<!-- end of main content and footer container-->  
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     </body>
 </html>
