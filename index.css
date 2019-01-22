@@ -70,8 +70,8 @@ footer {
     box-shadow: 0 0 0px #000000 !important;
 }
 
-#cimage {
-    width: 100% \9; 
+.img-fluid {
+    max-width: 100%; /*to make images fluid/responsive*/
 }
 
 /*floats*/
@@ -121,7 +121,7 @@ a.active {
     background-image: linear-gradient(to bottom right, #008F95,/*aqua*/ rgb(162, 201, 247)); /* Standard syntax (must be last) */
 }
 
-/*for h1 tag - changes color of text */
+/*for h1 tag - changes color of text color: rgb(201, 253, 204); */
 #small {
     color: rgb(201, 253, 204);
 }
@@ -249,6 +249,8 @@ a.active {
             box-shadow: 0 0 0px #000000 !important;
         }
     }
+
+
 /*screen.height;
 900
 screen.width;
