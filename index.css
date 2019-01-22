@@ -26,7 +26,7 @@ header {
 }
 
 footer {
-    
+    padding:20px;
     text-align: center;
     background-color: rgb(52, 4, 92);
     color: rgb(208, 246, 255);
@@ -68,6 +68,10 @@ footer {
     opacity:0.7 !important;
     filter: none; /*alpha(opacity=70) !important;  For IE8 and earlier - main code from:  https://css-tricks.com/apply-a-filter-to-a-background-image/*/
     box-shadow: 0 0 0px #000000 !important;
+}
+
+#cimage {
+    width: 100% \9; 
 }
 
 /*floats*/
