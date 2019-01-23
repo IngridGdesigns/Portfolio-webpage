@@ -249,6 +249,10 @@ li:focus-within a {
         font-size: 12px;
     }
 
+    footer {
+        background-color: skyblue;
+    }
+
       p {
           font-size: 18px;
       }
