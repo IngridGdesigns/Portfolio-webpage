@@ -11,8 +11,8 @@ Navbar has usual portfolio pattern - About, Portfolio, Contact
 I added image hover to spark interest.
 I inserted icons in place of words for the social media links.
 
-link to Repo : https://github.com/IngridGdesigns/Portfolio-webpage
-link to invite of Repo : https://github.com/IngridGdesigns/Portfolio-webpage/invitations
+- link to Repo : https://github.com/IngridGdesigns/Portfolio-webpage
+- link to Page: https://ingridgdesigns.github.io/Portfolio-webpage/
 
 
 #Credits: 
