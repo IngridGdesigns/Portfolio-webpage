@@ -110,8 +110,30 @@ footer {
 }
 
 a.active {
-    color:purple;
+    color:pink;
 }
+
+/*:focus-within`*/
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+  display: block;
+}
+
+li:hover,
+li:focus-within {
+   color: black;
+}
+
+li:focus-within a {
+    outline: none;
+  }
+
+
+
 
 /* ID's*/
 /* gradient for header box */
