@@ -219,7 +219,7 @@ li:focus-within a {
         filter: none; /*alpha(opacity=70) !important;  For IE8 and earlier - main code from:  https://css-tricks.com/apply-a-filter-to-a-background-image/*/
         box-shadow: 0 0 0px #000000 !important;
     }
-
+   
   }
 
 
@@ -246,15 +246,15 @@ li:focus-within a {
       .override {
         font-family: 'Montserrat', sans-serif;
         color: purple;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     footer {
-        background-color: skyblue;
+        background-color: skyblue; /*makes footer blue so footer text is readable*/
     }
 
       p {
-          font-size: 18px;
+          font-size: 16px;
       }
       h3 {
          color:purple;
